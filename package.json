@@ -4,16 +4,22 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage": "http://krishnmohan19.github.io/MyToDoList"
   "dependencies": {
+    "-": "0.0.1",
+    "gh-pages": "^3.1.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "save-dev": "0.0.1-security"
   },
   "devDependencies": {
     "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
